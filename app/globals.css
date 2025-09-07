@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  :root {
+        /* Cosmos Brand Colors */
+        --cosmos-light-gray: #e6e6e6;
+        --cosmos-gold: #dbb979;
+        --cosmos-light-gold: #ffdb8d;
+        --cosmos-purple: #461044;
+        
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 289 96% 15%;  /* Cosmos purple */
+        --primary-foreground: 210 40% 98%;
+        --secondary: 43 44% 73%;  /* Cosmos gold */
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 0 0% 90%;  /* Cosmos light gray */
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 42 100% 77%;  /* Cosmos light gold */
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 289 96% 15%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+  
+  .dark {
+        --background: 289 96% 8%;
+        --foreground: 210 40% 98%;
+        --card: 289 96% 8%;
+        --card-foreground: 210 40% 98%;
+        --popover: 289 96% 8%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 42 100% 77%;
+        --primary-foreground: 289 96% 15%;
+        --secondary: 289 50% 25%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 289 50% 25%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 43 44% 73%;
+        --accent-foreground: 289 96% 15%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 289 50% 25%;
+        --input: 289 50% 25%;
+        --ring: 42 100% 77%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+        --sidebar-background: 289 96% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 42 100% 77%;
+        --sidebar-primary-foreground: 289 96% 15%;
+        --sidebar-accent: 289 50% 15%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 289 50% 15%;
+        --sidebar-ring: 42 100% 77%;
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}

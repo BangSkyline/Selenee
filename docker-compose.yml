@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongo:
+    image: mongo:7.0
+    container_name: cosmos_mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: cosmos_intranet
+    ports:
+      - "27017:27017"
+    volumes:
+      - cosmos_mongo_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+
+  # Cosmos Intranet Application  
+  cosmos_app:
+    image: selenee:V1
+    container_name: cosmos_intranet
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URL=mongodb://mongo:27017
+      - DB_NAME=cosmos_intranet
+      - JWT_SECRET=4z9z3k8m2p7q1w6e5r4t9y2u0i3o8a2s
+      - NEXT_PUBLIC_BASE_URL=http://localhost:3000
+    depends_on:
+      - mongo
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  cosmos_mongo_data:
+    driver: local
