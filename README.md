@@ -1,6 +1,6 @@
 # Cosmos Intranet - Resource Management System
 
-A modern, secure intranet application for managing company resources including meeting rooms and supercomputers. Built with Next.js, TypeScript, and MongoDB.
+A modern, intranet application for managing company resources including meeting rooms and supercomputers. Built with Next.js, TypeScript, and MongoDB.
 
 ## 🌟 Features
 
@@ -25,7 +25,7 @@ A modern, secure intranet application for managing company resources including m
 1. **Clone and navigate to the project:**
    ```bash
    git clone <repository-url>
-   cd cosmos-intranet
+   cd Selenee
    ```
 
 2. **Start the application:**
@@ -99,9 +99,8 @@ cosmos-intranet/
 └── README.md                      # This file
 ```
 
-## 🎨 Cosmos Brand Colors
+## 🎨 Cosmos Colors
 
-The application uses the official cosmos color palette:
 - **Light Gray**: `#e6e6e6` - Background and neutral elements
 - **Gold**: `#dbb979` - Secondary actions and accents  
 - **Light Gold**: `#ffdb8d` - Highlights and hover states
@@ -152,7 +151,7 @@ The application uses the official cosmos color palette:
 
 ## 🧪 Testing
 
-The application includes comprehensive backend testing:
+The app includes comprehensive backend testing:
 
 ```bash
 # Run backend tests
@@ -165,32 +164,6 @@ python3 backend_test.py
 - ✅ Resource management (default resource creation, fetching)
 - ✅ Reservation system (conflict detection, CRUD operations)
 - ✅ Database initialization (auto-setup of defaults)
-
-## 🐳 Docker Deployment
-
-### Build Custom Image
-```bash
-# Build the application image
-docker build -t cosmos-intranet .
-
-# Run with external MongoDB
-docker run -p 3000:3000 \
-  -e MONGO_URL=mongodb://your-mongo-host:27017 \
-  -e JWT_SECRET=your-secret \
-  cosmos-intranet
-```
-
-### Production Deployment
-```bash
-# Start production environment
-docker-compose -f docker-compose.yml up -d
-
-# View logs
-docker-compose logs -f cosmos_app
-
-# Stop environment  
-docker-compose down
-```
 
 ## 🔄 API Endpoints
 
@@ -222,15 +195,6 @@ docker-compose logs mongo
 
 # Restart MongoDB
 docker-compose restart mongo
-```
-
-**Application Won't Start**
-```bash
-# Check application logs
-docker-compose logs cosmos_app
-
-# Rebuild if needed
-docker-compose build --no-cache cosmos_app
 ```
 
 **JWT Token Issues**
@@ -269,8 +233,5 @@ For technical support or feature requests:
 
 ## 📝 License
 
-This project is proprietary software for Cosmos company internal use.
+You're free to do whatever you want with the code, don't hesitate to fork or share your work !
 
----
-
-**Cosmos Intranet v1.0** - Built with ❤️ for efficient resource management
