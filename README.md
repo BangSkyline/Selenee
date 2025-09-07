@@ -1,6 +1,6 @@
-# Cosmos Intranet - Resource Management System
+# Sélénée - Intranet Resource Management System
 
-A modern, intranet application for managing company resources including meeting rooms and supercomputers. Built with Next.js, TypeScript, and MongoDB.
+A modern, intranet application for managing company resources including meeting rooms and supercomputers. Built with Next.js, JavaScript, and MongoDB.
 
 ## 🌟 Features
 
