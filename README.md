@@ -1,5 +1,7 @@
 # Sélénée - Intranet Resource Management System
 
+![Sélénée Banner](Admin.png)
+
 A modern, intranet application for managing company resources including meeting rooms and supercomputers. Built with Next.js, JavaScript, and MongoDB.
 
 ## 🌟 Features
@@ -10,7 +12,8 @@ A modern, intranet application for managing company resources including meeting 
 - **User Authentication**: JWT-based authentication with role-based access control
 - **Admin Panel**: User management, reservation oversight
 - **Responsive Design**: Beautiful cosmos-branded UI with dark/light mode support
-
+![Sélénée Banner](admin panel.png)
+![Sélénée Banner](user panel.png)
 ### Key Capabilities
 - ✅ **Conflict Prevention**: Automatic detection of overlapping reservations
 - ✅ **Role-Based Access**: Admin and user roles with appropriate permissions  
